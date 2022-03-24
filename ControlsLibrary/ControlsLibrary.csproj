@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B79591E4-48B7-4B4F-910F-A380E7A43350}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ControlsLibrary</RootNamespace>
+    <AssemblyName>ControlsLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IronPdf, Version=2022.1.0.4599, Culture=neutral, PublicKeyToken=94e1c31412563c75, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPdf.Slim.2022.1.4599\lib\net40\IronPdf.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\SLMB_SMS\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Academics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Academics.Designer.cs">
+      <DependentUpon>Academics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common.Designer.cs">
+      <DependentUpon>Common.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faculties\Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Faculties\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faculties\Allocation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Faculties\Allocation.Designer.cs">
+      <DependentUpon>Allocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faculties\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Faculties\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fees\Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fees\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fees\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fees\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grades\Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grades\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grades\GradeSubjectAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grades\GradeSubjectAdd.Designer.cs">
+      <DependentUpon>GradeSubjectAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grades\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grades\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grades\ReportCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grades\ReportCard.Designer.cs">
+      <DependentUpon>ReportCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Levels\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Levels\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mailer.cs" />
+    <Compile Include="Printer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrations\Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Registrations\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrations\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Registrations\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sectors\Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sectors\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sectors\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sectors\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Streams\Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Streams\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Streams\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Streams\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\Admit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Students\Admit.Designer.cs">
+      <DependentUpon>Admit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Students\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students\View.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Students\View.Designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subjects\Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subjects\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subjects\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subjects\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Adds.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Adds.Designer.cs">
+      <DependentUpon>Adds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ChangePassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teachers\Adds.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Teachers\Adds.Designer.cs">
+      <DependentUpon>Adds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teachers\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Teachers\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Years\Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Years\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Years\Index.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Years\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
+      <Project>{2681d759-0199-4f27-be59-52190e1c70b1}</Project>
+      <Name>ClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Academics.resx">
+      <DependentUpon>Academics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common.resx">
+      <DependentUpon>Common.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculties\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculties\Allocation.resx">
+      <DependentUpon>Allocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculties\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fees\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fees\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grades\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grades\GradeSubjectAdd.resx">
+      <DependentUpon>GradeSubjectAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grades\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grades\ReportCard.resx">
+      <DependentUpon>ReportCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrations\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrations\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sectors\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sectors\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Streams\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Streams\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\Admit.resx">
+      <DependentUpon>Admit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students\View.resx">
+      <DependentUpon>View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subjects\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subjects\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Adds.resx">
+      <DependentUpon>Adds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teachers\Adds.resx">
+      <DependentUpon>Adds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teachers\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Years\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Years\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\hide_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\generate_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\generate_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\IronPdf.Native.Chrome.Windows.2022.1.4593\build\net452\IronPdf.Native.Chrome.Windows.targets" Condition="Exists('..\packages\IronPdf.Native.Chrome.Windows.2022.1.4593\build\net452\IronPdf.Native.Chrome.Windows.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\IronPdf.Native.Chrome.Windows.2022.1.4593\build\net452\IronPdf.Native.Chrome.Windows.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IronPdf.Native.Chrome.Windows.2022.1.4593\build\net452\IronPdf.Native.Chrome.Windows.targets'))" />
+  </Target>
+</Project>
